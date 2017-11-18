@@ -18,10 +18,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="Ea8-sd-mua">
             <objects>
-                <viewController id="PkJ-dK-Fpo" sceneMemberID="viewController">
+                <viewController id="PkJ-dK-Fpo" customClass="LeagueVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="als-Jd-etN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,7 +174,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="7Ru-uF-FSI" kind="show" id="5m1-0w-AWb"/>
+                                    <action selector="onNextTapped:" destination="PkJ-dK-Fpo" eventType="touchUpInside" id="EJe-tz-yX1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Si6-sO-6Hl">
@@ -207,16 +207,19 @@
                         <viewLayoutGuide key="safeArea" id="GkG-2j-OjZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qzr-wa-vIE"/>
+                    <connections>
+                        <segue destination="7Ru-uF-FSI" kind="show" identifier="skillVCSegue" id="tNt-ps-OYE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmQ-as-cxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="g81-BW-QMk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="893.60000000000002" y="121.88905547226388"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="QUC-eo-dNd">
             <objects>
-                <viewController id="7Ru-uF-FSI" sceneMemberID="viewController">
+                <viewController id="7Ru-uF-FSI" customClass="SkillVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Lk-tf-LSP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,7 +277,7 @@
                                     <constraint firstAttribute="height" constant="45" id="IXd-qa-7H4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="NEXT">
+                                <state key="normal" title="FINISH">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
