@@ -64,6 +64,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="PkJ-dK-Fpo" kind="show" id="ePW-r8-uYD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -170,10 +173,21 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="7Ru-uF-FSI" kind="show" id="5m1-0w-AWb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Si6-sO-6Hl">
+                                <rect key="frame" x="20" y="20" width="29" height="24"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="g81-BW-QMk" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="3rO-NR-HlN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Si6-sO-6Hl" firstAttribute="top" secondItem="als-Jd-etN" secondAttribute="top" constant="20" id="1g0-x8-V3F"/>
                             <constraint firstItem="GkG-2j-OjZ" firstAttribute="trailing" secondItem="BOE-au-eGG" secondAttribute="trailing" constant="40" id="1sw-Ff-Xaw"/>
                             <constraint firstItem="UzP-HC-Lu8" firstAttribute="top" secondItem="als-Jd-etN" secondAttribute="top" id="2qE-Nz-jvH"/>
                             <constraint firstItem="ccX-pM-qqr" firstAttribute="top" secondItem="SQY-A5-d0J" secondAttribute="bottom" constant="50" id="8zC-Sd-gC2"/>
@@ -181,6 +195,7 @@
                             <constraint firstItem="GkG-2j-OjZ" firstAttribute="trailing" secondItem="UzP-HC-Lu8" secondAttribute="trailing" id="Eem-39-PgK"/>
                             <constraint firstItem="SQY-A5-d0J" firstAttribute="top" secondItem="GkG-2j-OjZ" secondAttribute="top" constant="20" id="FEC-Gz-zef"/>
                             <constraint firstItem="GkG-2j-OjZ" firstAttribute="bottom" secondItem="BOE-au-eGG" secondAttribute="bottom" constant="30" id="Hsw-bI-TEC"/>
+                            <constraint firstItem="Si6-sO-6Hl" firstAttribute="leading" secondItem="GkG-2j-OjZ" secondAttribute="leading" constant="20" id="P6a-rl-ik7"/>
                             <constraint firstItem="GkG-2j-OjZ" firstAttribute="trailing" secondItem="ccX-pM-qqr" secondAttribute="trailing" constant="40" id="TXI-ht-x0D"/>
                             <constraint firstItem="ccX-pM-qqr" firstAttribute="leading" secondItem="GkG-2j-OjZ" secondAttribute="leading" constant="40" id="Uxg-1O-xHn"/>
                             <constraint firstItem="GkG-2j-OjZ" firstAttribute="bottom" secondItem="BOE-au-eGG" secondAttribute="bottom" constant="30" id="WH1-gQ-EgU"/>
@@ -191,8 +206,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GkG-2j-OjZ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qzr-wa-vIE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmQ-as-cxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="g81-BW-QMk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="893.60000000000002" y="121.88905547226388"/>
         </scene>
@@ -261,6 +278,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWm-ZL-Mpk">
+                                <rect key="frame" x="20" y="20" width="29" height="24"/>
+                                <state key="normal" image="backButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -274,8 +295,10 @@
                             <constraint firstItem="fcx-pB-nX8" firstAttribute="leading" secondItem="Vi6-Tg-ROt" secondAttribute="leading" constant="40" id="fu1-1z-l7j"/>
                             <constraint firstItem="Vi6-Tg-ROt" firstAttribute="bottom" secondItem="YAU-0P-hVc" secondAttribute="bottom" id="gDQ-Dz-tnm"/>
                             <constraint firstItem="Vi6-Tg-ROt" firstAttribute="bottom" secondItem="fcx-pB-nX8" secondAttribute="bottom" constant="30" id="gra-P8-AR8"/>
+                            <constraint firstItem="qWm-ZL-Mpk" firstAttribute="leading" secondItem="Vi6-Tg-ROt" secondAttribute="leading" constant="20" id="hLN-62-dvh"/>
                             <constraint firstItem="lmm-WJ-0r4" firstAttribute="top" secondItem="GRH-Yx-2cH" secondAttribute="bottom" constant="50" id="kXf-eb-PKZ"/>
                             <constraint firstItem="YAU-0P-hVc" firstAttribute="leading" secondItem="9Lk-tf-LSP" secondAttribute="leading" id="ljm-UE-u0f"/>
+                            <constraint firstItem="qWm-ZL-Mpk" firstAttribute="top" secondItem="9Lk-tf-LSP" secondAttribute="top" constant="20" id="mz4-7u-Efd"/>
                             <constraint firstItem="Vi6-Tg-ROt" firstAttribute="trailing" secondItem="GRH-Yx-2cH" secondAttribute="trailing" id="vzH-iR-LdV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vi6-Tg-ROt"/>
@@ -287,6 +310,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
